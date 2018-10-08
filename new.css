@@ -1,0 +1,36 @@
+h1, h3 {
+  font-style: bold;
+  font-weight: bolder;
+  text-align: center;
+  color: purple;
+}
+
+h4 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+span {
+  color: red;
+}
+
+footer {
+  color: white;
+  background-color:  #110707;
+  margin: 10px;
+}
+
+.carousel-inner img {
+  width: auto;
+  min-height: auto;
+}
+
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none;
+  }
+}
