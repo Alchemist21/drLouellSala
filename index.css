@@ -1,8 +1,14 @@
+body {
+  background-image: url(images/tech02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 h1, h3 {
   font-style: bold;
   font-weight: bolder;
   text-align: center;
-  color: purple;
+  color: white;
 }
 
 h4 {
@@ -12,6 +18,11 @@ h4 {
 
 p {
   text-align: justify;
+
+}
+
+h5 {
+    color: white;
 }
 
 span {
