@@ -1,91 +1,66 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
+<html lang="en">
+<head>
+    <title>myWebsiteLouellSala</title>
     <meta charset="utf-8">
-    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="contact.css">
-  </head>
-  <body>
-    <hr>
-    <h1>Contact Form</h1>
-    <hr>
-  <div class="container">
-    <form action="mailto:louell_sala@yahoo.com" method="GET">
+</head>
+<body>
+<!-- Start of nav bar -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    	<a class="navbar-brand" href="#"></a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
 
-      <div class="row">
-        <div class="col-25">
-            <label for="fname">First Name</label>
-        </div>
-        <div class="col-75">
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        </div>
-      </div>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html" target="_blank">Blog</a></li>
+        <li class="active"><a href="#">Contact</a></li>
+    </div>
+  </div>
+</nav>
+<!-- end of nav bar -->
 
-      <div class="row">
-        <div class="col-25">
-            <label for="lname">Last Name</label>
-        </div>
-        <div class="col-75">
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        </div>
-      </div>
+<h2>Contact Me</h2>
+	<form action="mailto:louell_sala@yahoo.com" enctype="text/plain" method="POST">
+	<ul class="form-style-1">
+	    <li><label>Full Name<span class="required">*</span></label><input type="text" name="first name "
+				class="field-divided" placeholder="First"/>
+				<input type="text" name="surname" class="field-divided" placeholder="Last" />
+			</li>
+	    <li>
+	        <label>Email <span class="required">*</span></label>
+	        <input type="email" name="email " class="field-long" />
+	    </li>
+	    <li>
+	        <label>Subject</label>
+	        <select name="subject " class="field-select">
+	        <option value="Reserve">Consultancy</option>
+	        <option value="Partnership">Partnership</option>
+	        <option value="General Question">General</option>
+	        </select>
+	    </li>
+	    <li>
+	        <label>Your Message <span class="required">*</span></label>
+	        <textarea name="message " id="field5" class="field-long field-textarea"></textarea>
+	    </li>
+	    <li>
+	        <input type="submit" value="Submit" />
+	    </li>
+	</ul>
+	</form>
 
-
-
-      <div class="row">
-        <div class="col-25">
-            <label for="email">Email</label>
-        </div>
-        <div class="col-75">
-          <input type="email" id="email" name="email" placeholder="Your Email is..">
-        </div>
-      </div>
-
-      <div class="row">
-          <div class="col-25">
-              <label for="number">Contact Number</label>
-          </div>
-          <div class="col-75">
-            <input type="number" id="number" name="number" placeholder="Your number is..">
-          </div>
-      </div>
-
-
-      <div class="row">
-        <div class="col-25">
-            <label for="location">Location</label>
-        </div>
-        <div class="col-75">
-          <select id="location" name="location">
-              <option value="asia">Asia</option>
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="europe">Europe</option>
-              <option value="mea">Middle East Africa</option>
-              <option value="usa">United States</option>
-              <option value="samerica">South America</option>
-              <option value="others">Others</option>
-          </select>
-        </div>
-      </div>
-
-      <hr>
-
-      <div class="row">
-        <div class="col-25">
-          <label for="subject">Subject</label>
-        </div>
-        <div class="col-75">
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-        </div>
-      </div>
-
-      <br>
-      <div class="row">
-        <input type="submit" value="Submit">
-      </div>
-
-  </form>
-</div>
 </body>
-</html>
+</html
